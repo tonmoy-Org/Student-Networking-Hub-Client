@@ -13,9 +13,7 @@ Student Networking Hub is a web application built with React.js and React Router
 - **Blogging**: Users can create and share blog posts with the community.
 - **Search**: Users can search for other users by name.
 
-## Installation
+## Visit
 
-1. Clone the repository:
+Explore Student Networking Hub [here](https://student-networking-hub.web.app/).
 
-   ```bash
-   git clone https://github.com/your-username/student-networking-hub.git
