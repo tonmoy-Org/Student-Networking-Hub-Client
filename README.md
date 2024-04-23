@@ -1,8 +1,21 @@
-# React + Vite
+# Student Networking Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Student Networking Hub is a web application built with React.js and React Router for students to connect, communicate, and share resources within their academic community.
 
-Currently, two official plugins are available:
+![Student Networking Hub Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **User Authentication**: Users can sign up, log in, and log out securely.
+- **Profile Management**: Users can view and update their profiles.
+- **Messaging**: Users can send and receive messages from other users.
+- **Notifications**: Users receive notifications for new messages and other activities.
+- **Blogging**: Users can create and share blog posts with the community.
+- **Search**: Users can search for other users by name.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/student-networking-hub.git
