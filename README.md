@@ -2,7 +2,7 @@
 
 Student Networking Hub is a web application built with React.js and React Router for students to connect, communicate, and share resources within their academic community.
 
-![Student Networking Hub Screenshot](/src/assets/Readme/Screenshot%202024-04-23%20143643.png)
+![Student Networking Hub Screenshot](/src/assets/Readme/2024-04-23%2015%2007%2005.png)
 ![Student Networking Hub Screenshot](/src/assets/Readme/Screenshot%202024-04-23%20143653.png)
 ![Student Networking Hub Screenshot](/src/assets/Readme/Screenshot%202024-04-23%20144115.png)
 
