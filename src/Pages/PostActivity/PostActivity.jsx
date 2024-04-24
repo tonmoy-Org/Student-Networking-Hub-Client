@@ -12,12 +12,25 @@ import { Link } from "react-router-dom";
 const PostActivity = () => {
     const { user, loading } = useAuth();
     const [PostActivity, refetch, isLoading] = usePostActivity();
-    console.log(PostActivity)
+    const [randomData, setRandomData] = useState([]);
+
+    // Function to shuffle array
+    const shuffleArray = (array) => {
+        const shuffled = array.slice().sort(() => Math.random() - 0.5);
+        return shuffled;
+    };
+
+    useEffect(() => {
+        if (PostActivity.length > 0) {
+            const randomOrder = shuffleArray(PostActivity);
+            setRandomData(randomOrder);
+        }
+    }, [PostActivity]);
+
     const [showComments, setShowComments] = useState({});
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const dropdownRef = useRef(null);
 
-    const reverse = PostActivity.slice().reverse();
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -149,7 +162,7 @@ const PostActivity = () => {
 
     return (
         <div>
-            {isLoading || loading || reverse === null ? (
+            {isLoading || loading || randomData === null ? (
                 <>
                     <Loader />
                     <Loader />
@@ -157,7 +170,7 @@ const PostActivity = () => {
                 </>
             ) : (
 
-                reverse.map((post, index) => (
+                randomData.map((post, index) => (
                     <div key={index} className="card lg:w-[690px] bg-white shadow-xl rounded-none flex flex-col lg:p-6 mb-6 p-3">
                         <div className="flex justify-between items-center">
                             <div className="flex items-center">
